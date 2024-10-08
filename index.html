@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำหนังสือ "Die Liebe im Ernstfall • Love in Case of Emergency ความรักที่เกิดขึ้นโดยไม่คาดคิด"</title>
+    <meta name="keywords" content="Die Liebe im Ernstfall,Love in Case of Emergency, นวนิยายความรัก, ความรักที่เกิดขึ้นโดยไม่คาดคิด ">
+    <meta name="description" content="Die Liebe im Ernstfall • Love in Case of Emergency เป็นนวนิยายที่นำเสนอเรื่องราวความรักที่เกิดขึ้นในสถานการณ์ที่ท้าทายและไม่คาดคิด โดยเรื่องราวนี้สะท้อนให้เห็นถึงความซับซ้อนของความรักและความสัมพันธ์ในยุคปัจจุบัน">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .registration-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%; /* Full width */
+            max-width: 100vw; /* Ensures it spans the full viewport width */
+            box-sizing: border-box; /* Include padding and border in the element's total width */
+        }
+        .registration-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+        .registration-container input {
+            width: calc(100% - 20px); /* Full width minus padding */
+            padding: 10px; /* Increased padding */
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+            box-sizing: border-box; /* Include padding and border in the element's total width */
+        }
+        .registration-container input:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+        .registration-container button {
+            width: 100%;
+            padding: 12px; /* Increase padding for better usability */
+            border: none;
+            border-radius: 5px;
+            background: #4a90e2;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .registration-container button:hover {
+            background: #357ab8;
+        }
+        header {
+            background: #4a90e2;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 15px auto;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+        .popular-books {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            background: #e7f3fe;
+            text-align: center; /* Center text inside */
+        }
+        .popular-books h2 {
+            color: #4a90e2;
+            font-size: 2em;
+            margin: 0 0 10px; /* Removed extra margin */
+        }
+        .popular-books .books-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+        .popular-books .book {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+        .popular-books .book:hover {
+            transform: translateY(-5px);
+        }
+        .popular-books img {
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .book-info {
+            padding: 10px 0;
+        }
+        .book-info h3 {
+            margin: 0;
+            font-size: 1.25em;
+        }
+        .book-info p {
+            margin: 5px 0;
+        }
+        .suggestion-form input, .suggestion-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .discussion-forum {
+            background: #f7f7f7;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .discussion-forum textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .discussion-forum button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #4a90e2;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .discussion-forum button:hover {
+            background: #357ab8;
+        }
+        .articles {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: #4a90e2;
+            color: #ffffff;
+            border-radius: 0 0 15px 15px;
+        }
+        .category-section {
+            margin: 20px 0;
+        }
+        .category-section h2 {
+            text-align: center;
+            color: #4a90e2;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .category-books {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        .category-books .book {
+            flex: 1 1 25%;
+            margin: 10px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+        .category-books .book:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+
+<body>
+
+    <header class="sticky-top">
+        <h1>Book Recommendation Haven</h1>
+        <nav>
+            <a href="#fiction"><h3>Fiction</h3></a>
+            <a href="#non-fiction"><h3>Non-Fiction</h3></a>
+            <a href="#phychology"><h3>Phychology</h3></a>
+            <a href="#romance"><h3>Romance</h3></a>
+            <a href="#feelgood"><h3>Feel Good</h3></a>
+            <a href="#mystery"><h3>Mystery</h3></a>
+        </nav>
+        
+        <style>
+            nav {
+                display: flex; /* ใช้ flexbox เพื่อจัดเรียงในแนวนอน */
+                justify-content: center; /* จัดให้อยู่ตรงกลาง */
+                gap: 20px; /* ระยะห่างระหว่างลิงก์ */
+                margin: 20px 0; /* เพิ่มระยะห่างด้านบนและล่าง */
+            }
+        
+            nav a {
+                text-decoration: none; /* ลบเส้นใต้ */
+                color: inherit; /* ให้สีข้อความสืบทอดจากพ่อแม่ */
+            }
+        </style>
+        
+        <input type="text" id="search" placeholder="Search for books, authors, or genres..." onkeyup="searchBooks()">
+    </header>
+    
+
+<div class="container">
+    <div class="popular-books">
+        <h2>Most Popular Books of the Month</h2>
+        <div class="books-container">
+            <div class="book" >
+                <img src="images/1-1.jpg" alt="" width="300" height="350">
+                <div class="book-info">
+                    <h3>มุงิโมโตะ ซัมโปะ อย่างน้อยวันนี้ฉันก็มีสิ่งที่ชอบ</h3>
+                    <h4>By Sumino Yoru</h4>
+                    <p>Rating: ★★★★★</p>
+                    <p>"ความสุขในสิ่งเล็กๆ" เล่าเรื่องราวของ มุงิโมโตะ ซัมโปะ หญิงสาวที่ค้นพบความสุขจากชีวิตประจำวันที่เรียบง่าย ตั้งแต่การเดินเล่นในสวน อ่านหนังสือในห้องสมุด จนถึงการลิ้มลองขนมไทยากิ แม้จะถูกมองว่าแปลก แต่เธอยังคงยืนหยัดในความชอบของตัวเอง นิยายนี้สอนเราให้เห็นว่าความสุขไม่ได้มาจากสิ่งใหญ่โต แต่จากการให้ความสำคัญกับรายละเอียดเล็กๆ รอบตัว มาเรียนรู้ว่าความสุขอยู่ใกล้แค่เอื้อมในทุกวันกันเถอะ!</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/1-2.jpg" alt="" width="300" height="350">
+                <div class="book-info">
+                    <h3>หนังสือเล่มหนา กาลเวลา และผู้คน</h3>
+                    <h4>By Mizuyo Kakuta</h4>
+                    <p>Rating: ★★★★★</p>
+                    <p>เป็นการเดินทางที่เต็มไปด้วยอารมณ์และความรู้สึก ผ่านเรื่องราว 10 เรื่องที่เชื่อมโยงหนังสือและผู้คนเข้าด้วยกันในวิธีที่ไม่คาดคิด เริ่มจาก "หนังสือเดินทาง" ที่สะท้อนการเปลี่ยนแปลงชีวิตหลังการขายหนังสือในวัยเยาว์ และ "จดหมาย" ที่เปิดเผยความทรงจำแสนลึกซึ้งที่ซ่อนอยู่ในหนังสือกวี ขยับไปยัง "ตู้หนังสือของเขากับฉัน" ที่บอกเล่าความรักและการแยกทางที่บีบคั้นใจ เรื่องราวแต่ละเรื่องล้วนสัมผัสได้ถึงความสัมพันธ์ระหว่างคนกับหนังสือ ที่ไม่เพียงเป็นแค่ตัวอักษร แต่ยังเต็มไปด้วยความหมายและความทรงจำที่ลึกซึ้ง สัมผัสความมหัศจรรย์ที่เกิดขึ้นจากการอ่านและค้นพบโลกใหม่ในหนังสือเหล่านี้ แล้วคุณจะค้นพบว่า หนังสือคือเพื่อนแท้ที่ทำให้ชีวิตเราเต็มไปด้วยความหมาย!</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/1-3.jpg" alt="" width="300" height="350">
+                <div class="book-info">
+                    <h3>52 เฮิรตซ์…คลื่นเสียงที่ไม่มีใครได้ยิน</h3>
+                    <h4>By Machida Sonoko</h4>
+                    <p>Rating: ★★★★☆</p>
+                    <p>หลายๆ คนคงมีช่วงเวลาใดเวลาหนึ่งที่รู้สึกเหงาเเละโดดเดี่ยว แต่ไม่นานก็คงหายไป แต่เชื่อไหมว่ามีใครบางคนที่กลับรู้สึกว่าตัวเองนั้นเกิดมาเพื่ออยู่คนเดียวบนโลกใบนี้เเละหวังว่าจะได้พบเจอใครสักคนที่รู้สึกเหมือนตนสักวันหนึ่ง เรื่องราวของมิชิมะ คิโกะ หญิงสาวผู้ที่ครอบครัวผลักไสมาทั้งชีวิต กับเด็กชายคนหนึ่งที่เรียกตัวเองว่า มูชิ (แมลง) ซึ่งถูกทำร้ายร่างกายจากแม่แท้ๆ มาตลอด เมื่อคนสองคนที่ถูกทำร้ายไม่ว่าจะทางกายหรือทางใจโคจรมาเจอกันเพราะความเหงา เรื่องราวอบอุ่นหัวใจจึงได้เริ่มต้นขึ้น แต่ก็ไม่รู้ว่าสุดท้ายแล้วจะมีใครได้ยินเสียงของวาฬที่เหงาที่สุดในโลกทั้ง 2 ตัวนี้หรือไม่</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/1-4.jpg" alt="" width="300" height="350">
+                <div class="book-info">
+                    <h3>แดนดิไลออน</h3>
+                    <h4>By เออิจิ นาคาตะ</h4>
+                    <p>Rating: ★★★★☆</p>
+                    <p>ติดตามเรื่องราวของ เรนจิ เด็กชายวัย 11 ขวบที่ต้องเผชิญกับการเปลี่ยนแปลงครั้งใหญ่ เมื่อเขาตื่นขึ้นมาในร่างผู้ใหญ่ในอนาคต 20 ปีข้างหน้า พร้อมกับ โคฮารุ หญิงสาวที่อ้างตัวเป็นคนรักของเขา ในขณะที่ความสลับร่างทำให้เขาต้องช่วยชีวิต 'ใครบางคน' จากเงื้อมมือของฆาตกร นิยายลึกลับนี้เต็มไปด้วยอารมณ์และการไขปริศนาข้ามเวลา ท่ามกลางบรรยากาศที่โรแมนติกและดอกแดนดิไลออน คุณจะได้สัมผัสความจริงของการเติบโตและการเผชิญกับความรักและการสูญเสีย ที่ทำให้หัวใจของคุณบีบคั้นและตราตรึงใจ!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 1 -->
+    <div class="category-section" id="fiction">
+        <h2>Fiction</h2>
+        <div class="category-books">
+            <div class="book">
+                <img src="images/1.jpg" alt="" width="300" height="400">
+                <div class="book-info">
+                    <h3>หนูน้อยหมวกแดงพบศพระหว่างเดินทาง </h3>
+                    <h4>By อาโอยากิ อาอิโตะ (Aoyagi Aito)</h4>
+                    <p>“ทำไมแผนฆาตกรรมเธอถึงได้ชุ่ยขนาดนี้” เป็นนิยายที่เล่าเรื่องหนูน้อยหมวกแดงในมุมมองใหม่ โดยผสมผสานเทพนิยายคลาสสิกเข้ากับแนวสืบสวนสอบสวน ในระหว่างการเดินทางไปส่งคุกกี้และไวน์ หนูน้อยหมวกแดงต้องเผชิญกับเหตุการณ์ไม่คาดคิดมากมาย เช่น อุบัติเหตุของรถม้าฟักทองจากซินเดอเรลลา การหายตัวไปของเจ้าหญิงนิทรา และการฆาตกรรมแม่เลี้ยงใจร้ายในบ้านขนมหวาน ทำให้เธอต้องทำหน้าที่นักสืบเพื่อตามหาคนร้าย ในขณะเดียวกัน เธอยังต้องเผชิญกับปริศนาลึกลับเกี่ยวกับจุดประสงค์การเดินทางของตัวเอง นิยายเล่มนี้ได้รับความนิยมในญี่ปุ่น ด้วยเนื้อเรื่องที่สร้างสรรค์และแปลกใหม่ ทำให้ผู้อ่านได้รับประสบการณ์ที่แตกต่างจากนิทานดั้งเดิม!</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/2.jpg" alt="" width="300" height="400">
+                <div class="book-info">
+                    <h3>Die Liebe im Ernstfall • Love in Case of Emergency</h3>
+                    <h4>By ดานีเอลา ครีน (Daniela Krien)</h4>
+                    <p>“ความรักไม่ใช่ความรู้สึก ความรักไม่ใช่เรื่องโรแมนติก ความรักคือการกระทำ” เป็นนวนิยายความรักที่สำรวจความรักผ่านชีวิตของผู้หญิงห้าคนเรื่องความรักที่เกิดขึ้นโดยไม่คาดคิด โดยนำเสนอการสำรวจความสัมพันธ์ระหว่างตัวละครที่ต้องเผชิญกับวิกฤตในชีวิต และการตัดสินใจที่ต้องทำในช่วงเวลาที่สำคัญ เรื่องราวนี้สะท้อนให้เห็นถึงความซับซ้อนของความรักและความสัมพันธ์ในยุคปัจจุบัน อีกทั้งเป็นแรงบันดาลใจที่กระตุ้นให้ผู้อ่านสะท้อนความหมายที่ลึกซึ้งของความรักในชีวิตจริง ไม่ว่าคุณจะเคยพบเจอความรักในรูปแบบไหน คุณจะค้นพบบางสิ่งที่สัมผัสหัวใจในแต่ละหน้า เตรียมตัวให้พร้อมสำหรับการเดินทางที่เต็มไปด้วยอารมณ์ ความคิด และการเติบโต ที่จะช่วยให้คุณเข้าใจว่า “ความรัก” </p>
+                    </p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/3.jpg" alt="" width="300" height="400">
+                <div class="book-info">
+                    <h3>ฝันถึงเรื่องนั้นอีกแล้ว</h3>
+                    <h4>By โยะรุ ซุมิโนะ (Yoru Sumino)</h4>
+                    <p>"ฝันถึงเรื่องนั้นอีกแล้ว" เป็นงานแปลญี่ปุ่นเรื่องแรกที่ตั้งใจเจาะกลุ่มเป้าหมายวัยรุ่น หวังว่าเมื่ออ่านจบทุกคนจะได้คำตอบของคำถามที่ว่า "ความสุขของคุณคืออะไร" ผลงานอีกเรื่องของ "ซูมิโนะ โยรุ" ผู้เขียนเรื่อง "ตับอ่อนเธอนั้น ขอฉันเถอะนะ" ที่ทุกคนคงประทับใจกับเนื้อเรื่องอันเรียบง่ายแต่ทรงพลัง ไม่ว่าใครก็ต้องมี "เรื่องที่อยากแก้ไข" กันทั้งนั้น "นาโนกะ" คือเด็กประถมที่ไม่มีเพื่อนที่โรงเรียนเลยสักคน แต่กลับมีเพื่อนนอกโรงเรียนตั้งหลายคน เรื่องจะเปิดตัวละครเหล่านี้ขึ้นมาให้เราสงสัย ว่าพวกเขามีแบล็คกราวด์กันอย่างไร ทำไมถึงทำเรื่องแบบนั้น เรื่องราวของพวกเขา จะค่อยๆเปิดเผยในขณะที่เรื่องราวต่างๆที่เกิดกับชีวิตของ นาโนกะดำเนินไปด้วย
+                        </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- 2 -->
+    <div class="category-section" id="non-fiction">
+        <h2>Non-Fiction</h2>
+        <div class="category-books">
+            <div class="book">
+                <img src="images/4.jpg" alt="" width="300" height="400">
+                <div class="book-info">
+                    <h3>วรรณกรรม: ประวัติศาสตร์เรื่องเล่าแห่งจินตนาการ</h3>
+                    <h4>By จอห์น ซัตเทอร์แลนด์</h4> 
+                    <p>วรรณกรรมเป็นแหล่งบันเทิงและจินตนาการที่ไม่มีวันสิ้นสุด ซึ่งมักนำเสนอสิ่งใหม่เมื่อเราอ่านซ้ำ แม้จะเป็นเรื่องเดิม จอห์น ซัตเทอร์แลนด์กล่าวว่า “วรรณกรรมเป็นจิตวิญญาณของมนุษย์” โดยหน้าที่ที่สำคัญที่สุดของมันไม่ใช่เพียงความบันเทิง แต่คือการช่วยให้เราเข้าใจตัวเอง คนอื่น สังคม และความเป็นมนุษย์ได้ลึกซึ้งขึ้น วรรณกรรมเปิดโอกาสให้เราตีความและแยกแยะประสบการณ์ต่าง ๆ นอกจากนี้ หนังสือเล่มนี้ยังเสนอความรู้เกี่ยวกับนักเขียนและวรรณกรรมหลายคน พร้อมสำรวจความเปลี่ยนแปลงของวรรณกรรมที่สอดคล้องกับการเปลี่ยนแปลงของโลก จึงทำให้ผู้อ่านได้รับความสนุกและความรู้ไปพร้อมกัน วรรณกรรมไม่ใช่เพียงสถานที่หลบหนีจากความจริง แต่คือโลกอีกใบที่น่าตื่นเต้นและซับซ้อน!</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/5.jpg" alt="" width="300" height="400">
+                <div class="book-info">
+                    <h3>เมื่อโลกไม่มีเรา (The World Without Us) </h3>
+                    <h4>By แอลัน ไวส์แมน (Alan Weisman)</h4>
+                    <p>“การเปลี่ยนแปลงคือคุณลักษณ์ของธรรมชาติ ไม่มีอะไรคงอยู่เหมือนเดิมตลอดไป” เริ่มต้นจากคำถามว่าโลกจะเป็นอย่างไรหากมนุษย์หายไปตลอดกาล โดยใช้มุมมองทางวิทยาศาสตร์เพื่ออธิบายการเปลี่ยนแปลงที่เกิดขึ้นกับธรรมชาติและสิ่งต่าง ๆ บนโลก ตัวอย่างเช่น ใน 2 วัน รถไฟใต้ดินในนิวยอร์กจะจมน้ำ ใน 1 สัปดาห์ โรงไฟฟ้านิวเคลียร์จะระเบิด และใน 500 ปี เมืองใหญ่จะกลายเป็นป่ารก หนังสือเล่มนี้เป็นสารคดีที่ชวนให้ผู้อ่านเห็นภาพของโลกในลักษณะที่ไม่เคยคิดมาก่อน เพื่อกระตุ้นให้ตระหนักถึงผลกระทบจากการกระทำของมนุษย์ที่มีต่อโลกใบนี้ โดยทุกสิ่งที่เราสร้างขึ้นย่อมทิ้งร่องรอยไว้เสมอ</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/6.jpg" alt="" width="300" height="400">
+                <div class="book-info">
+                    <h3>จากดับสูญสู่นิรันดร์: ส่องวิถีหลังความตายจากหลากหลายวัฒนธรรม</h3>
+                    <h4>By เคทลิน โดดี้ (Caitlin Doughty)</h4>
+                    <p>“ทำไมวัฒนธรรมของฉันเองถึงขยะแขยงความตายนัก” สำรวจความตายซึ่งเป็นฉากสุดท้ายของชีวิตที่หลายคนหลีกเลี่ยงการพูดคุยเกี่ยวกับมัน ผู้เขียนซึ่งทำงานเป็นสัปเหร่อหญิง เปิดช่อง Ask A Mortician บนยูทูบเพื่อรณรงค์ให้ผู้คนเปิดใจรับรู้ความตายอย่างมีสติ โดยนำเสนอโลกแห่งความตายในหลากหลายวัฒนธรรม เช่น การบูชาหัวกะโหลกในโบลิเวีย อาคารเก็บอัฐิในโตเกียว และการใช้ชีวิตร่วมกับร่างผู้ล่วงลับในอินโดนีเซีย หนังสือเล่มนี้ชวนผู้อ่านเดินทางสู่ความเข้าใจใหม่เกี่ยวกับความตาย ไม่เพียงแต่ให้เกียรติผู้ล่วงลับ แต่ยังช่วยเยียวยาผู้สูญเสีย โดยมุ่งหมายให้เข้าใจถึงความตายในแง่มุมที่ลึกซึ้งและมีมนุษยธรรมมากขึ้น</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 3 -->
+    <div class="category-section" id="phychology">
+        <h2>Psychology</h2>
+        <div class="category-books">
+            <div class="book">
+                <img src="images/7.jpg" alt="" width="300" height="400">
+                    <div class="book-info">
+                    <h3>Restorative Cities ให้นครเยียวยาใจ</h3>
+                    <h4>By Jenny Roe, Layla McCay</h4>
+                    <p>ในหนังสือ "เมืองแห่งอนาคต" ผู้เขียนเสนอแนวคิดว่าการออกแบบเมืองไม่จำเป็นต้องใช้วิสัยทัศน์ที่ล้ำสมัย แต่ควรมุ่งเน้นไปที่สุขภาพจิต ความเป็นอยู่ที่ดี และคุณภาพชีวิต โดยเสนอให้สร้างเมืองที่มีต้นไม้และผืนน้ำ เพื่อให้ผู้คนสามารถสูดอากาศได้อย่างเต็มที่ พร้อมทั้งให้ความสำคัญกับความปลอดภัยสำหรับผู้หญิงและความสะดวกสบายสำหรับผู้สูงอายุและคนพิการ นอกจากนี้ยังควรมีลานกิจกรรมและสนามเด็กเล่นเพียงพอเพื่อส่งเสริมการมีส่วนร่วมในชุมชน ในยุคที่ความเหงากำลังแพร่ระบาดและระยะห่างทางสังคมเป็นที่ชัดเจน หนังสือชวนให้เราคิดถึงการออกแบบเมืองที่จะฟื้นฟูชีวิตและสร้างความสุขให้กับทุกคนในสังคมอย่างแท้จริง.</p>
+                </div>
+            </div>
+           
+            <div class="book">
+                <img src="images/9.jpg" alt="" width="300" height="400">
+                    <div class="book-info">
+                    <h3>No Hurry, No Worry ขออภัย แต่ไม่ต้องรีบ</h3>
+                    <h4>By พิชญา โชนะโต</h4>
+                    <p>ในหนังสือ "No Hurry, No Worry" โดยพิชญา โชนะโต ผู้เขียนชวนเราให้สำรวจคำถามสำคัญเกี่ยวกับชีวิตในยุคที่เต็มไปด้วยความเร่งรีบและความคาดหวัง เช่น ทำไมยิ่งพยายามมีความสุขเราถึงยิ่งรู้สึกทุกข์? และทำไมแม้จะอดทนและขยันก็ยังไม่รู้สึกสุขสบาย? หนังสือเล่มนี้ไม่ขอให้คุณชะลอชีวิต แต่เสนอให้คุณถอยออกมาพิจารณาและทำความเข้าใจเบื้องหลังปรากฏการณ์ต่าง ๆ ที่เกิดขึ้นในชีวิต โดยนำเสนอแนวทางใหม่ในการมองโลกและความเชื่อที่เรามีเกี่ยวกับการเติบโตและความสำเร็จ ซึ่งอาจทำให้คุณได้พบกับคำตอบว่า บางทีคุณอาจไม่จำเป็นต้องรีบร้อนเสมอไป หนังสือเล่มนี้จะเป็นเพื่อนที่คอยปลอบประโลมใจและกระตุ้นให้คุณตั้งคำถามเกี่ยวกับชีวิตในแบบที่คุณไม่เคยคิดมาก่อน.</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="images/8.jpg" alt="" width="300" height="400">
+                    <div class="book-info">
+                    <h3>Laziness Does Not Existผ่อนชีวิตบิด</h3>
+                    <h4>By Devon Price</h4>
+                    <p>ในหนังสือ "บิดขี้เกียจ" ผู้เขียนชวนเราสำรวจรากฐานทางจิตวิทยาของ "ความขี้เกียจ" ที่มักถูกมองในแง่ลบ โดยเฉพาะในยุคที่สังคมยกย่องความขยันและความสำเร็จจากการทำงานอย่างหนัก เช่น วลีที่ว่า “ต้องโปรดักทีฟนะ” หรือ “เรียนจบต้องได้เกียรตินิยมนะ” ที่ทำให้หลายคนรู้สึกว่าคุณค่าของตนเองวัดจากความยุ่งเหยิงในตารางงาน หนังสือเล่มนี้ไม่เพียงแต่จะเปิดเผยว่าทำไมเรายังรู้สึกว่า “นี่ยังดีไม่พอ” แต่ยังเสนอวิธีการใหม่ในการปรับชีวิตและผ่อนคลายจิตใจ โดยชวนให้เราตั้งคำถามใหม่เกี่ยวกับการใช้ชีวิตอย่างมีความสุข เตรียมตัวให้พร้อมที่จะบิดขี้เกียจและหาคำตอบใหม่ของชีวิตไปพร้อมกัน!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 4 -->
+    <div class="category-section" id="romance">
+        <h2>Romance</h2>
+        <div class="category-books">
+            <div class="book">
+                <img src="images/10.jpg" width="300" height="400">
+                <div class="book-info">
+                    <h3>ร้านหนังสือที่มีแต่นิยายรัก</h3>
+                    <h4>By ประชาคม ลุนาชัย</h4>
+                    <p>ในนิยาย "นิยายรัก" ขนาด 21 ตอน เราจะได้ติดตามเรื่องราวของนลิดา หรือครูแก้ม ผู้ที่เริ่มต้นชีวิตด้วยการรักการอ่านนิยายรักเกาหลี แต่เมื่อได้ไปสอนในต่างจังหวัด เธอได้พบกับภูดิน เจ้าของร้านหนังสือและนักวาดภาพประกอบ ที่ช่วยเปลี่ยนแปลงรสนิยมการอ่านของเธอ โดยแนะนำให้เธออ่านวรรณกรรมไทยและวรรณกรรมชั้นเยี่ยมจากทั่วโลก นิยายเล่มนี้ไม่เพียงแต่เป็นเรื่องราวความรักที่ซาบซึ้งใจ แต่ยังเสนอทัศนะเกี่ยวกับหนังสือดีและนิยายรักที่น่าอ่าน ทำให้ผู้อ่านตระหนักถึงพลังของการอ่านในการเปลี่ยนแปลงความคิดและเติบโตภายใน พร้อมทั้งสร้างความเข้าใจว่า "หนังสือทุกเล่มล้วนเป็นนิยายรัก" เมื่อเขียนด้วยความรักและความปรารถนาดีต่อผู้อ่าน.</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/11.jpg"  width="300" height="400">
+                <div class="book-info">
+                    <h3>ฉันไม่ชอบทั้งโลก ฉันชอบแค่เธอคนเดียว</h3>
+                    <h4>By เฉียวยี</h4>
+                    <p>ผู้เขียนเล่าเรื่องราวความรักที่เต็มไปด้วยความซับซ้อนระหว่างเธอกับนาย F ชายผู้หัวรั้นที่มักทำตัวเฉยเมยเมื่อเกิดความบาดหมาง แม้เธอจะเป็นฝ่ายยอมรับผิดเสมอ แต่ความรักของพวกเขายังคงมีความหวานซ่อนอยู่ เมื่อเขาเมินเฉยใส่เธอถึงหนึ่งสัปดาห์ เธอพยายามทำเป็นเข้มแข็งจนกระทั่งได้ฟังเพลง "Baby" ของจางซวน ที่กระตุ้นให้เธอแสดงความรู้สึกออกมาอย่างสุดท้าย ในที่สุด ประโยคที่เขาพูดว่า "แต่..ฉันไม่ชอบทั้งโลก ฉันชอบแค่เธอคนเดียว" กลายเป็นจุดเปลี่ยนที่ทำให้เธอน้ำตาไหลด้วยความซาบซึ้ง นี่คือเรื่องราวที่สื่อถึงพลังของความรัก แม้ในโลกที่ไม่แน่นอน การได้อยู่กับคนที่รักถือเป็นสิ่งที่มีค่าและสำคัญที่สุดในชีวิต หนังสือเล่มนี้จะทำให้ผู้อ่านได้สัมผัสกับความรักอันบริสุทธิ์และความสำคัญของการเลือกที่จะรักกันในช่วงเวลาที่ท้าทาย.</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/12.jpg"  width="300" height="400">
+                <div class="book-info">
+                    <h3>April Come She Will เดือนเมษายน พาใครบางคนกลับมา</h3>
+                    <h4>By Genki Kawamura</h4>
+                    <p>ในนิยายของคาวามูระ เก็งกิ เราได้พบกับฟูจิชิโระ จิตแพทย์หนุ่มที่ได้รับจดหมายจากฮารุ ผู้หญิงในอดีตที่เขาควรจะลืม เมื่อฮารุบรรยายถึงความงดงามของทะเลสาบอูยูนีในโบลิเวีย และความรู้สึกที่เธอมีต่อเขาในเดือนเมษายนแห่งความทรงจำ ฟูจิชิโระเริ่มตั้งคำถามเกี่ยวกับชีวิตและความสัมพันธ์ของตัวเอง โดยเฉพาะกับยาโยอิ แฟนสาวที่มีแผนจะแต่งงานในปีนี้ ในขณะที่เขาพยายามหาคำตอบเกี่ยวกับความรักและความสุขที่เขามีกับยาโยอิ ผ่านการสนทนากับคนรอบตัว เขาต้องเผชิญหน้ากับความรู้สึกที่ยังค้างคาใจต่อฮารุ ความสัมพันธ์ที่ซับซ้อนและความใคร่ในยุคสมัยนี้ถูกนำเสนออย่างตรงไปตรงมา ทำให้ผู้อ่านได้สะท้อนความรู้สึกและค้นหาคำตอบในชีวิตของตัวเอง นิยายนี้เป็นการตั้งคำถามที่ท้าทายกรอบนิยามความรักแบบเดิม ๆ พร้อมกับการนำวัฒนธรรมป๊อปมาใส่ในเรื่องราวอย่างมีเสน่ห์</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="category-section" id="feelgood">
+        <h2>Feel Good</h2>
+        <div class="category-books">
+            <div class="book">
+                <img src="images/13.jpg" alt="" width="300" height="400">
+                    <div class="book-info">
+                    <h3>โกโก้อุ่นๆ กับคุณในวันพฤหัสฯ</h3>
+                    <h4>By มิจิโกะ อาโอยามะ (Michiko Aoyama)</h4>
+                    <p>นิยายอบอุ่นที่ประกอบด้วย 12 เรื่องราวซึ่งสะท้อนถึงความสัมพันธ์เรียบง่ายแต่ลึกซึ้งระหว่างตัวละครที่มีน้ำใจและปรารถนาดีต่อกัน เรื่องราวทั้งหมดเชื่อมโยงกันผ่าน "คุณโกโก้" หญิงสาวที่มาที่คาเฟ่เพื่อสั่งโกโก้ในทุกวันพฤหัสฯ แต่วันหนึ่ง ความเงียบและน้ำตาของเธอได้เปิดเผยความเศร้าที่ซ่อนอยู่ ซึ่งทำให้เรื่องราวของผู้คนอื่นๆ เริ่มเผยออกมาจากพนักงานออฟฟิศที่พยายามทำข้าวกล่องให้ลูกชายเป็นครั้งแรกหลังจากการสูญเสียสามี ไปจนถึงครูมือใหม่ที่ต้องร่วมงานกับครูสุดเนี้ยบในโรงเรียนอนุบาล ไม่เพียงแต่ให้ความรู้สึกอบอุ่นหัวใจ แต่ยังกระตุ้นให้ผู้อ่านได้สะท้อนถึงความรัก ความมุ่งมั่น และการทำงานหนักของผู้คนเพื่อสร้างสรรค์สิ่งดีๆ ให้กับคนรอบข้าง เช่นเดียวกับการจิบโกโก้อุ่นๆ ในเช้าวันพฤหัสฯ ที่ทำให้เรารู้สึกดีขึ้น มีความหวัง และสามารถเผชิญกับชีวิตได้อย่างเข้มแข็ง ผ่านการบอกเล่าที่ชัดเจนและมีอารมณ์ชวนให้ผู้อ่านค้นพบความหมายที่แท้จริงของการเป็นมนุษย์</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/14.jpg" alt="" width="300" height="400">
+                    <div class="book-info">
+                    <h3>แมวนักพยากรณ์แห่งร้านกาแฟจันทร์เต็มดวง</h3>
+                    <h4>By ไมโมจิทสึกิ</h4>
+                    <p>"ร้านกาแฟจันทร์เต็มดวง" เป็นนิยายที่เปิดโลกสู่ร้านกาแฟพิเศษที่เปิดเฉพาะในคืนจันทร์เต็มดวง ที่มีมาสเตอร์แมวเหมียวให้บริการพร้อมกับเสิร์ฟขนมหวานและเครื่องดื่มชั้นเลิศ นอกจากนั้น มาสเตอร์แมวยังมีความสามารถในการ "อ่านชะตา" โดยใช้โหราศาสตร์เพื่อช่วยลูกค้าในการแก้ปัญหาและเยียวยาความทุกข์ใจ เรื่องราวนำเสนอผ่านประสบการณ์ของลูกค้าหลายคนที่มาที่ร้านเพื่อค้นหาความหวังและการสนับสนุน ทำให้ผู้อ่านได้สัมผัสความอบอุ่นและความน่ารักของตัวละคร นิยายนี้เหมาะสำหรับผู้ที่หลงใหลในความเชื่อเรื่องดวงชะตา คาเฟ่ และความน่ารักของแมว!</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/15.jpg" alt="" width="300" height="400">
+                    <div class="book-info">
+                    <h3>คุณ ผม และผู้คนที่สวนกันบนรถไฟสายฮังคิว</h3>
+                    <h4>By ฮิโระ อาริคาว่า</h4>
+                    <p>เป็นนิยายที่สำรวจปาฏิหาริย์เล็กๆ ที่ซ่อนอยู่ในการเดินทางที่แสนธรรมดา ผ่านเรื่องราวของผู้โดยสารที่บังเอิญพบกันในรถไฟท้องถิ่นที่ใช้เวลาเดินทางไม่ถึง 15 นาที แม้ว่าชีวิตของพวกเขาจะไม่เคยรู้จักกันมาก่อน แต่การพบพานในขบวนรถไฟนี้กลับก่อให้เกิดความสัมพันธ์สุดพิเศษ ที่อาจเป็นแค่การพบกันครั้งเดียวหรือจุดเริ่มต้นของความสัมพันธ์ที่ยาวนาน เรื่องราวอบอุ่นนี้บอกเล่าถึงการเชื่อมโยงชีวิตของผู้คนที่เดินทางระหว่างสถานีทาคาระซึและสถานีนิชิโนะมิยะ คิตะงุจิ ทำให้ผู้อ่านได้สัมผัสกับความสวยงามของการเชื่อมต่อและความทรงจำที่เกิดขึ้นในช่วงเวลาสั้นๆ นิยายนี้ชวนให้เรามองโลกและคนรอบข้างด้วยสายตาที่อบอุ่นและเปิดกว้าง!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-section" id="mystery">
+        <h2>Mystery</h2>
+        <div class="category-books">
+            <div class="book">
+                <img src="images/16.jpg" alt="" width="300" height="400">
+                    <div class="book-info">
+                    <h3>ฆาตกรมนุษย์กบกับศพปริศนา</h3>
+                    <h4>By ชิจิริ นากายามะ</h4>
+                    <p>ผลงานสืบสวนสุดระทึกจากอาจารย์ชิจิริ นากายามะ ที่จะพาคุณเดินทางเข้าสู่โลกมืดมิดของฆาตกรรมที่พิสดารและปริศนาที่น่าขนลุก! เมื่อสถานีตำรวจในจังหวัดชิซุโอกะได้รับรายงานการฆาตกรรมสุดอุกอาจ ฆาตกรทิ้งร่องรอยแปลกประหลาดไว้ ทั้งวิธีการทำกับศพที่ทำให้เหมือนวัตถุและข้อความลึกลับที่เขียนด้วยลายมือคล้ายเด็ก นี่คือการลงมือครั้งแรกของ "มนุษย์กบ" ที่กลายเป็นต้นตอของความหวาดกลัวในชุมชน ตามติดการสืบสวนของตำรวจคาสึยะและหัวหน้าสารวัตรวาตาเสะ ที่ต้องเผชิญกับการฆาตกรรมต่อเนื่องที่น่าตกใจทั้งสี่ศพ การตีวงล้อมจากคนรอบข้างกลายเป็นเรื่องที่ท้าทาย เมื่อข้อความจากฆาตกรพาเราเข้าไปในจิตใจที่มืดมนและบิดเบี้ยว  หนังสือเล่มนี้ไม่เพียงนำเสนอเรื่องราวที่ตื่นเต้นและน่าสนใจ แต่ยังสะท้อนถึงความซับซ้อนของจิตใจมนุษย์ ทำให้คุณต้องตั้งคำถามเกี่ยวกับธรรมชาติของความชั่วร้ายและการกระทำที่ไม่อาจคาดเดา เตรียมตัวให้พร้อมสำหรับการเปิดเผยที่คุณไม่อาจลืมเลือน!</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/17.jpg" alt="" width="300" height="400">
+                    <div class="book-info">
+                    <h3>คดีฆาตกรรมคฤหาสน์นักเขียน</h3>
+                    <h4>By คิตายามะ ทาเกกุนิ</h4>
+                    <p>ในฤดูหนาวอันโหดร้าย นักเขียน 6 คนถูกเชิญให้มาพักที่คฤหาสน์อันมีชื่อเสียงที่เคยสร้างแรงบันดาลใจให้กับนักเขียนรุ่นก่อน แต่กลับเกิดเหตุการณ์ไม่คาดฝันเมื่อเจ้าของคฤหาสน์ถูกพบเป็นศพไร้ศีรษะท่ามกลางพายุหิมะ และนั่นคือจุดเริ่มต้นของการฆาตกรรมที่น่าสยดสยอง! ขณะที่นักเขียนแต่ละคนต้องเผชิญกับการฆาตกรรมที่เกิดขึ้นทีละคน พวกเขาจะต้องค้นหาความจริงและระบุว่าใครคือฆาตกรที่แฝงตัวอยู่ท่ามกลางพวกเขา การตายเหล่านี้เหมือนถูกออกแบบมาเป็นนิยายสืบสวน และพวกเขาจะต้องใช้ความสามารถในการเขียนของตัวเองเพื่อเอาชีวิตรอด! นิยายเล่มนี้ไม่เพียงนำเสนอความตื่นเต้น แต่ยังเปิดเผยเบื้องหลังชีวิตของนักเขียน และความลับในวงการหนังสือที่ไม่เคยมีใครรู้ พบกับเรื่องราวที่ทำให้คุณต้องคิดและสงสัย ไม่อาจวางลงได้จนกว่าจะถึงหน้าสุดท้าย!</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/18.jpg" alt="" width="300" height="400">
+                    <div class="book-info">
+                    <h3>คดีฆาตกรรมในบ้านสิบเหลี่ยม</h3>
+                    <h4>By อายาสึจิ ยูกิโตะ (Yukito Ayatsuji)</h4>
+                    <p>ถ้าคุณหลงใหลในความลึกลับและเรื่องราวฆาตกรรมสุดระทึก ขอแนะนำให้คุณไม่พลาด "บ้านสิบเหลี่ยม" นิยายสืบสวนที่เต็มไปด้วยความตื่นเต้นและปริศนา เรื่องราวเริ่มต้นเมื่อกลุ่มนักศึกษาเจ็ดคนจากชมรมวิจัยนิยายสืบสวนตัดสินใจเดินทางไปยังเกาะสึโนะจิมะเพื่อสำรวจสถานที่เกิดเหตุฆาตกรรมที่ยังไม่คลี่คลาย โดยบ้านที่พวกเขาจะพักอาศัยคือ "บ้านสิบเหลี่ยม" ซึ่งเหลือรอดจากเหตุการณ์ไฟไหม้ที่คร่าชีวิตคนไปสี่ราย ความลึกลับของคดีฆาตกรรมที่เกิดขึ้นเมื่อหกเดือนก่อนทำให้พวกเขาตื่นเต้น แต่ความตื่นเต้นนี้กลับกลายเป็นความหวาดกลัวเมื่อหนึ่งในพวกเขาถูกฆ่าตาย ภายในบ้านสิบเหลี่ยมที่เต็มไปด้วยความลึกลับและไม่มีการติดต่อกับโลกภายนอก นักศึกษาแต่ละคนต้องเปิดเผยความลับและความหลังของตน เพื่อค้นหาว่าใครคือฆาตกรที่แฝงตัวอยู่ท่ามกลางพวกเขา การไขปริศนาและการต่อสู้กับความกลัวที่เกิดขึ้นในใจทำให้เรื่องราวนี้น่าติดตามจนไม่อาจวางลงได้</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="suggestion-form" style="margin-top: 30px; padding: 20px; background: white; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center; color: #4a90e2;">Suggest a New Book</h2>
+        <input type="text" id="suggestion-title" placeholder="Book Title" required style="width: calc(100% - 20px); padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; transition: border-color 0.3s; box-sizing: border-box;">
+        <input type="text" id="suggestion-author" placeholder="Author" required style="width: calc(100% - 20px); padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; transition: border-color 0.3s; box-sizing: border-box;">
+        <textarea id="suggestion-description" rows="4" placeholder="Why do you recommend this book?" required style="width: calc(100% - 20px); padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; transition: border-color 0.3s; box-sizing: border-box;"></textarea>
+        <button onclick="submitSuggestion()" style="width: 100%; padding: 12px; border: none; border-radius: 5px; background: #4a90e2; color: white; font-size: 1em; cursor: pointer; transition: background 0.3s;">Submit Suggestion</button>
+    </div>
+    
+    <div class="registration-container">
+        <h2 style="color: #4a90e2;">User Registration</h2> <!-- เปลี่ยนสีให้ตรงกัน -->
+        <p><input type="text" id="username" placeholder="Username" required style="width: calc(100% - 20px); padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;"></p>
+        <p><input type="email" id="email" placeholder="Email" required style="width: calc(100% - 20px); padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;"></p>
+        <p><input type="password" id="password" placeholder="Password" required style="width: calc(100% - 20px); padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;"></p>
+        <button onclick="registerUser()" class="register-button">Register</button>
+    </div>
+    
+    <style>
+        .register-button {
+            background-color: #4a90e2; /* เปลี่ยนสีพื้นหลังให้ตรงกัน */
+            color: white; /* สีตัวอักษร */
+            padding: 5px 10px; /* ขนาดของปุ่ม */
+            border: none; /* ลบขอบ */
+            border-radius: 5px; /* มุมโค้ง */
+            cursor: pointer; /* แสดงเป็นมือเมื่อชี้ */
+            width: 100%; /* ให้ปุ่มกดเต็มความกว้าง */
+            font-size: 1em; /* ขนาดตัวอักษร */
+            transition: background 0.3s; /* เอฟเฟกต์เมื่อชี้ */
+        }
+    
+        .register-button:hover {
+            background-color: #357ABD; /* เปลี่ยนสีเมื่อชี้ไปที่ปุ่ม */
+        }
+    </style>
+    
+    
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to Book Recommendation Haven! We are passionate about connecting readers with their next favorite book.</p>
+        <p>Our mission is to provide a platform where book lovers can discover new titles, share reviews, and engage with a community of fellow readers.</p>
+        <p>Whether you are looking for fiction, non-fiction, or specific genres, we aim to help you find the perfect read that matches your interests.</p>
+        
+        
+        <h3>Contact Us</h3>
+        <p>If you have any questions, suggestions, or feedback, feel free to reach out to us!</p>
+        <ul class="contact-info">
+            <li>Email: <p><a href="mailto:info@bookrecommendationhaven.com">info@bookrecommendationhaven.com</a></p></li>
+            <p><li>Phone: <a href="tel:+123456789">+1 234 567 89</a></li></p>
+            <li>Follow us on social media:</li>
+                <a href="#" class="social-icon"> Facebook</a>
+                <a href="#" class="social-icon"> Twitter</a>
+                <a href="#" class="social-icon"> Instagram</a>
+
+        </ul>
+    </div>
+    
+    
+</div>
+
+<footer>
+    <p>&copy; 2024 Book Recommendation Haven</p>
+</footer>
+
+<script>
+    function searchBooks() {
+        const query = document.getElementById('search').value.toLowerCase();
+        const books = document.querySelectorAll('.book');
+        books.forEach(book => {
+            const title = book.querySelector('h3') ? book.querySelector('h3').innerText.toLowerCase() : '';
+            const author = book.querySelector('p') ? book.querySelector('p').innerText.toLowerCase() : '';
+            if (title.includes(query) || author.includes(query)) {
+                book.style.display = 'block';
+            } else {
+                book.style.display = 'none';
+            }
+        });
+    }
+
+    function submitSuggestion() {
+        const title = document.getElementById('suggestion-title').value;
+        const author = document.getElementById('suggestion-author').value;
+        const description = document.getElementById('suggestion-description').value;
+        if (title && author && description) {
+            alert('Thank you for your suggestion!');
+            // Add functionality to store suggestions
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
+
+    function postDiscussion() {
+        const input = document.getElementById('discussion-input').value;
+        if (input) {
+            const feed = document.getElementById('discussion-feed');
+            const newPost = document.createElement('div');
+            newPost.textContent = input;
+            newPost.style.padding = '10px';
+            newPost.style.borderBottom = '1px solid #ccc';
+            feed.appendChild(newPost);
+            document.getElementById('discussion-input').value = '';
+        } else {
+            alert('Please write something to post.');
+        }
+    }
+
+
+    
+</script>
+
+</body>
+</html>
